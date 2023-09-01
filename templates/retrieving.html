@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>pk</th>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>url</th> 
+                <th>email</th>
+                <th>author</th>
+                <th>date<th>
+
+            </tr>
+            {% for ob in qset %}
+                <tr>
+                    <td>{{ ob.pk }}</td>
+                    <td>{{ ob.topic_name }}</td>
+                    <td>{{ob.name}}</td>
+                    <td>{{ob.url}}</td>
+                    <td>{{ob.email}}</td>
+                    <td>{{ob.author}}</td>
+                    <td>{{ob.date}}</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>

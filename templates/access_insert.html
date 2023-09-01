@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th>pk></th>
+                <th>name</th>
+                <th>author</th>
+                <th>email</th>
+            </tr>
+            {%  for ao in qsao %}
+            <tr>
+                <td> {{ ao.pk }}</td>
+                <td>{{ ao.name }}</td>
+                <td>{{ ao.author }}</td>
+                <td>{{ ao.email }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
